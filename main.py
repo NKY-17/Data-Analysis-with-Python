@@ -1,5 +1,5 @@
-from mean_var_std import calculate
-
-numbers = [0,1,2,3,4,5,6,7,8]
-result = calculate(numbers)
-print(result)
+from demographic_data_analyzer import analyze_demographic_data
+if __name__ == '__main__':
+    result = analyze_demographic_data()
+    for key, value in result.items():
+        print(f"{key}: {value}")
